@@ -1,0 +1,307 @@
+/*  GLobal Styles */
+
+background-image: url(media/clock.jpg);
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    justify-content: center;
+    place-items: center;
+    align-items: center;
+}
+
+.current-time {
+    font-family: 'Helvetica Neue', sans-serif;
+    font-size: 18px;
+    color: #333;
+    text-align: center;
+    
+    border-bottom: 2px solid #ccc;
+
+}
+.date-small {
+    font-family: 'Helvetica Neue', sans-serif;
+    font-size: 18px;
+    color: #333;
+    text-align: center;
+    
+    border-bottom: 2px solid #ccc;
+}
+
+
+h1 {
+    color: rgb(212, 242, 213);
+    background-color: rgb(3, 37, 37);
+    font-style: oblique;
+    margin: 0;
+}
+
+body {
+    min-height: 100vh;
+    font-family: sans-serif;
+    display: block;
+    max-height: none;
+
+}
+
+.d-flex {
+    display: flex;
+}
+
+.wrapper flex {
+    justify-items: center;
+}
+
+.container {
+    height: 30vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.logo {
+    width: 30px;
+    margin: auto;
+
+    /* adjust the width as needed */
+    height: auto;
+}
+
+.clock {
+    font-size: 24px;
+    /* adjust the font size as needed */
+}
+
+.wrapper img {
+    height: auto;
+    width: 150px;
+    justify-items: center;
+}
+
+.wrapper img :hover {
+    box-shadow: 0px 1px 1px 10px rgba(194, 39, 39, 0.3);
+}
+
+.btn {
+    outline: none;
+    border: none;
+    background-color: #66665c;
+    cursor: pointer;
+    padding: 0.5rem;
+    border-radius: 1px;
+    transition: all 0.3s ease-in-out;
+}
+
+select {
+    appearance: none;
+    outline: black;
+    background-color: #d6c8c8;
+    padding: 0.5rem;
+    font-weight: bold;
+    border: none;
+    border-radius: 2rem;
+    margin-right: 0.3rem;
+    cursor: pointer;
+    color: #0e141b;
+    border-color: black;
+}
+
+.mb {
+    margin-bottom: 1rem;
+}
+
+
+
+.date{
+    font-size: 20px;
+    font-weight: 600;
+    font-style: oblique;
+    text-align: center;
+    letter-spacing: 3px;
+}
+
+.time{
+    font-size: 60px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.time span:not(:last-child){
+    position: relative;
+    max-width: 0 6px;
+    font-weight: 600;
+    text-align: center;
+}
+
+.time span:last-child{
+    background: #2E94E3;
+    font-size: 30px;
+    font-weight: 600;
+    text-transform: uppercase;
+    margin-top: 10px;
+    padding: 0 5px;
+    border-radius: 3px;
+}
+
+/* End GLobal Styles */
+.clock-container-text {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    background-color: #4CAF50;
+}
+.navbar {
+    background-color: #f3f3f3;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    display: flex;
+    align-items: center;
+}
+
+.navbar-title {
+    margin-right: auto;
+    margin-left: 10px;
+}
+
+.navbar ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+}
+
+.navbar li {
+    margin: 0 10px;
+}
+
+.navbar a {
+    text-decoration: none;
+    color: #333;
+    padding: 10px;
+}
+
+.navbar a:hover {
+    background-color: #e6e6e6;
+}
+
+.clock-text {
+    font-family: 'Helvetica Neue', sans-serif;
+    font-size: 24px;
+    color: white;
+}
+
+.main-container {
+    min-height: 100vh;
+    align-items: center;
+    justify-content: center;
+    background-image: url(media/clock.jpg);
+    height: 100%;
+    /*background: linear-gradient(90deg, #00d2ff 0%, #3a47d5 100%);*/
+}
+
+.clock-container {
+    padding: 2rem;
+    flex-flow: column;
+    justify-content: flex-start;
+    align-items: center;
+    width: 100%;
+    min-height: 100vh;
+    background-color: #96a6947a;
+}
+.clock-title{
+    padding: 2rem;
+    flex-flow: column;
+    justify-content: flex-start;
+    align-items: center;
+    width: 100%;
+    background-color: #96a6947a;
+}
+
+
+.alarm-form {
+    justify-content: space-between;
+    
+    width: 115%;
+
+}
+.stopAlarm{
+    border-color: black;
+    border: 100px;
+    border-radius: 2rem;
+    font-weight: bold;
+    justify-content: space-around;
+        
+
+}
+
+.submit-button {
+    border-color: black;
+    border: 100px;
+    border-radius: 2rem;
+    font-weight: bold;
+    justify-content: space-around;
+}
+
+.set-alarm-container {
+    width: 100%;
+}
+
+.set-alarm-container .set-alarm-container-title .stopAlarm{
+    color: black;
+    font-weight: bold;
+    font-size: 1rem;
+
+}
+
+.alarm {
+    justify-content: space-between;
+    border-radius: 30px;
+    padding: 0.1rem 1rem;
+    align-items: center;
+}
+
+.alarm .delete-alarm {
+    border-radius: 2rem;
+    background-color: #66665c;
+    font-weight: bold;
+    color: wheat;
+    font-size: xx-medium;
+
+}
+
+.time {
+    color: #0e141b;
+    font-size: 1rem;
+    font-weight: bold;
+}
+
+
+.btn:hover {
+    box-shadow: #f8f7fc 2px 2px 2px 2px inset, #0f0f0f -2px -2px 10px 1px inset;
+}
+.stopAlarm:hover{
+    box-shadow: #f8f7fc 2px 2px 2px 2px inset, #0f0f0f -2px -2px 10px 1px inset;
+}
+
+
+
+
+
+
+/* style of devices of screen size less than 768px */
+
+@media only screen and (min-width: 600px) {
+    /* adding padding to container */
+    .main-container {
+        padding-block: 2rem;
+    }
+    .clock-container {
+        justify-content: center;
+        border-radius: 50px;
+        width: 400px;
+        min-height: auto;
+    }
+}
